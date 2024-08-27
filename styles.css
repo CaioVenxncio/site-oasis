@@ -5,7 +5,7 @@ body {
     background-color: #000000;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para troca de cores */
 }
 
 /* Container */
@@ -109,7 +109,7 @@ header {
     margin-bottom: 40px;
     border: 1px solid #ffffff;
     padding: 20px;
-    background-color: #333333;
+    background-color: #333333; /* Cor de fundo padrão */
 }
 
 .album-cover {
@@ -178,8 +178,8 @@ header.light-mode {
 }
 
 .album {
-    background-color: #f5f5f5;
-    border-color: #000000;
+    background-color: #f5f5f5; /* Cor de fundo no modo claro */
+    border-color: #000000; /* Cor da borda no modo claro */
 }
 
 .album-info {
