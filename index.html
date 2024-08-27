@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oasis</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -30,10 +32,10 @@
             <h2>Agenda de Shows</h2>
             <ul>
                 <li>Estádio Principality, Cardiff - 4 e 5 de julho</li> 
-                <li>Heaton Park, Manchester - 11, 12, 19 e 20 de julho</li> 
+                <li>Heaton Park, Manchester - 11, 12, 19 e 20 de julho</li>
                 <li>Estádio Wembley, Londres - 25 e 26 de julho / 2 e 3 de agosto</li> 
-                <li>Estádio Scottish Gas Murrayfield, Edimburgo - 8 e 9 de agosto</li>
-                <li>Croke Park, Dublin - 16 e 17 de agosto</li>
+                <li>Estádio Scottish Gas Murrayfield, Edimburgo - 8 e 9 de agosto</li> 
+                <li>Croke Park, Dublin - 16 e 17 de agosto</li> 
             </ul>
         </div>
     </section>
@@ -104,7 +106,7 @@
         function setupMusic() {
             tracks.forEach(track => {
                 const audioElement = document.getElementById(track);
-                audioElement.volume = 0.02; // Volume baixo
+                audioElement.volume = 0.02; // Volume ajustado para ser mais audível
                 audioElement.addEventListener('ended', playNextTrack);
             });
 
@@ -116,8 +118,6 @@
     </script>
 </body>
 </html>
-
-
 
 
 
