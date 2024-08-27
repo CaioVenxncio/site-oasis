@@ -1,0 +1,196 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.theme-toggle-button {
+    background-color: #ffcc00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle-button:hover {
+    background-color: #e6b800;
+}
+
+/* Announcement Section */
+.announcement {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.announcement h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.band-photo {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.announcement p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Shows Section */
+.shows {
+    padding: 40px 0;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.shows h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.shows ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shows li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Discography Section */
+.discography {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.discography h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    background-color: #333333;
+}
+
+.album-cover {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.album-info {
+    text-align: left;
+}
+
+.album-info h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.album-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.buy-button {
+    background-color: #ffcc00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header.light-mode {
+    background-color: #f5f5f5;
+}
+
+.shows.light-mode {
+    background-color: #cccccc;
+}
+
+.album {
+    background-color: #f5f5f5;
+    border-color: #000000;
+}
+
+.album-info {
+    color: #000000; /* Texto escuro no modo claro */
+}
+
+.theme-toggle-button.light-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+

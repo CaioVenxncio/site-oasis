@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/osasislogo.png" alt="Logo da Banda Oasis" class="logo">
+            <button id="theme-toggle" class="theme-toggle-button">Modo Claro</button>
+        </div>
+    </header>
+
+    <section class="announcement">
+        <div class="container">
+            <h1>Oasis Está de Volta!</h1>
+            <img src="img/photo.jpeg" alt="Foto da Banda Oasis" class="band-photo">
+            <p>"As armas silenciaram.
+                As estrelas se alinharam.
+                A grande espera acabou.
+                Venha ver.
+                Não será televisionado."</p>
+        </div>
+    </section>
+
+    <section class="shows">
+        <div class="container">
+            <h2>Agenda de Shows</h2>
+            <ul>
+                <li>Estádio Principality, Cardiff - 4 e 5 de julho &#127466;&#127463;</li> <!-- 🇬🇧 -->
+                <li>Heaton Park, Manchester - 11, 12, 19 e 20 de julho &#127466;&#127463;</li> <!-- 🇬🇧 -->
+                <li>Estádio Wembley, Londres - 25 e 26 de julho / 2 e 3 de agosto &#127466;&#127463;</li> <!-- 🇬🇧 -->
+                <li>Estádio Scottish Gas Murrayfield, Edimburgo - 8 e 9 de agosto &#127466;&#127463;</li> <!-- 🇬🇧 -->
+                <li>Croke Park, Dublin - 16 e 17 de agosto &#127466;&#127475;</li> <!-- 🇮🇪 -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="discography">
+        <div class="container">
+            <h2>Loja de Álbuns</h2>
+            <div class="album">
+                <img src="img/WTS.jpeg" alt="Capa do Álbum 1" class="album-cover">
+                <div class="album-info">
+                    <h3>What's The Story? Morning Glory?</h3>
+                    <p>"What's the Story? Morning Glory?" é o segundo álbum de estúdio da banda britânica Oasis, lançado em 1995. Este disco icônico mistura rock britânico com influências do folk e se destaca por suas canções memoráveis como "Wonderwall" e "Don't Look Back in Anger", consolidando o Oasis como uma das bandas mais importantes da década de 1990.</p>
+                    <p class="price">R$ 50,00</p>
+                    <button class="buy-button">Comprar Agora</button>
+                </div>
+            </div>
+            <div class="album">
+                <img src="img/HT.jpeg" alt="Capa do Álbum 2" class="album-cover">
+                <div class="album-info">
+                    <h3>Heathen Chemistry</h3>
+                    <p>"Heathen Chemistry" é o quarto álbum de estúdio do Oasis, lançado em 2002. O disco combina elementos de rock britânico com um som mais maduro e introspectivo, apresentando faixas notáveis como "The Hindu Times" e "Stop Crying Your Heart Out".</p>
+                    <p class="price">R$ 60,00</p>
+                    <button class="buy-button">Comprar Agora</button>
+                </div>
+            </div>
+            <div class="album">
+                <img src="img/DM.jpeg" alt="Capa do Álbum 3" class="album-cover">
+                <div class="album-info">
+                    <h3>Definitely Maybe</h3>
+                    <p>"Definitely Maybe" é o álbum de estreia do Oasis, lançado em 1994. Com um som poderoso e enérgico, o disco é aclamado por suas letras cativantes e hits como "Supersonic" e "Live Forever," definindo o início da ascensão da banda ao estrelato.</p>
+                    <p class="price">R$ 70,00</p>
+                    <button class="buy-button">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Oasis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Música de fundo (oculta) -->
+    <audio id="music1" src="msc/wonderwall.wav" loop></audio>
+    <audio id="music2" src="msc/champagnesupernova.wav" loop></audio>
+    <audio id="music3" src="msc/dlbia.wav" loop></audio>
+
+    <script>
+        // Array com os IDs dos elementos de áudio
+        const tracks = ['music1', 'music2', 'music3'];
+        let currentTrack = 0;
+
+        // Função para alternar entre as músicas
+        function playNextTrack() {
+            // Parar a música atual
+            document.getElementById(tracks[currentTrack]).pause();
+            document.getElementById(tracks[currentTrack]).currentTime = 0;
+
+            // Avançar para a próxima música
+            currentTrack = (currentTrack + 1) % tracks.length;
+
+            // Reproduzir a próxima música
+            document.getElementById(tracks[currentTrack]).play();
+        }
+
+        // Configuração inicial
+        function setupMusic() {
+            tracks.forEach(track => {
+                const audioElement = document.getElementById(track);
+                audioElement.volume = 0.02; // Volume baixo
+                audioElement.addEventListener('ended', playNextTrack);
+            });
+
+            // Começar com a primeira música
+            document.getElementById(tracks[currentTrack]).play();
+        }
+
+        setupMusic();
+    </script>
+</body>
+</html>
+
+
+
+
+
