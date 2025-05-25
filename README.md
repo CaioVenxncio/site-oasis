@@ -1,41 +1,42 @@
 # Oasis Website
 
-Este projeto é um site dedicado à banda britânica Oasis, com uma seção de anúncios sobre a volta da banda, uma agenda de shows, uma loja de álbuns e um player de música em segundo plano.
+This project is a website dedicated to the British band Oasis, featuring an announcement section about the band's reunion, a concert schedule, an album store, and a background music player.
 
-## Estrutura do Projeto
+## Project Structure
 
-O site é composto pelas seguintes seções:
+The website consists of the following sections:
 
-- **Cabeçalho**: Contém o logo da banda e um botão para alternar o tema claro/escuro.
-- **Anúncio**: Uma seção destacando o retorno da banda com uma citação icônica e uma foto.
-- **Agenda de Shows**: Lista os shows futuros da banda com detalhes sobre datas e locais.
-- **Loja de Álbuns**: Exibe álbuns da banda com informações sobre cada um, incluindo preços e botões para comprar.
-- **Rodapé**: Contém informações de direitos autorais.
+- **Header**: Contains the band's logo and a button to toggle light/dark mode.
+- **Announcement**: A section highlighting the band's comeback with an iconic quote and a photo.
+- **Concert Schedule**: Lists upcoming shows with dates and locations.
+- **Album Store**: Displays the band's albums with information, prices, and purchase buttons.
+- **Footer**: Includes copyright information.
 
-## Funcionalidades
+## Features
 
-### Música de Fundo
+### Background Music
 
-O site inclui um player de música oculto que toca faixas do Oasis em loop. As músicas são:
+The site includes a hidden music player that loops Oasis tracks in the background. The tracks include:
 - "Wonderwall"
 - "Champagne Supernova"
 - "Don't Look Back in Anger"
 
-O volume das músicas é configurado para um nível baixo (0.02) para não distrair os visitantes.
+The volume is set to a low level (0.02) to avoid distracting visitors.
 
-### Alternância de Tema
+### Theme Toggle
 
-Há um botão para alternar entre o modo claro e escuro, embora a funcionalidade de troca de tema não esteja implementada no exemplo fornecido.
+There is a button to switch between light and dark themes, although the theme-switching functionality is not implemented in the provided version.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **HTML**: Estrutura do conteúdo da página.
-- **CSS**: Estilização e layout do site (arquivo `styles.css`).
-- **JavaScript**: Controle da reprodução das músicas e manipulação do DOM.
+- **HTML**: For structuring the page content.
+- **CSS**: For styling and layout (file `styles.css`).
+- **JavaScript**: For music playback control and DOM manipulation.
 
-## Como Usar
+## How to Use
 
-1. **Clone o Repositório**
+1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/seu-usuario/oasis-website.git
+   git clone https://github.com/your-username/oasis-website.git
+   ```
